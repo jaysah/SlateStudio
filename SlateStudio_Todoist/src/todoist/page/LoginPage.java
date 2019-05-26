@@ -20,18 +20,18 @@ public class LoginPage{
 		
 	@CacheLookup
 	@AndroidFindBy(id="com.todoist:id/email_exists_input")
-	private MobileElement txtUserId;
+	public MobileElement txtUserId;
 	
 	@CacheLookup
 	@AndroidFindBy(id="com.todoist:id/btn_continue_with_email")
-	private MobileElement btnContinueWithEmail;
+	public MobileElement btnContinueWithEmail;
 	
 	@CacheLookup
 	@AndroidFindBy(id="com.todoist:id/log_in_password")
-	private MobileElement txtPassword;
+	public MobileElement txtPassword;
 	
 	@CacheLookup
 	@AndroidFindBy(id="com.todoist:id/btn_log_in")
-	private MobileElement btnLogin;
+	public MobileElement btnLogin;
 		
 }

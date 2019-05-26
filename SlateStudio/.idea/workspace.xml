@@ -12,6 +12,8 @@
   <component name="ChangeListManager">
     <list default="true" id="2f3de1e7-b262-4a39-8505-e097f6cecb37" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../SlateStudio_Todoist/src/TestSlateStudio/CheckProject_Exists.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SlateStudio_Todoist/src/TestSlateStudio/CheckProject_Exists.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SlateStudio_Todoist/src/todoist/page/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SlateStudio_Todoist/src/todoist/page/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SlateStudio_Todoist/src/todoist/page/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SlateStudio_Todoist/src/todoist/page/LoginPage.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,11 +34,10 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-14" />
-    <option name="y" value="-14" />
-    <option name="width" value="3864" />
-    <option name="height" value="2114" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="3840" />
+    <option name="width" value="3312" />
+    <option name="height" value="1812" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -142,11 +143,11 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="2208" height="1208" extended-state="6" />
+    <frame x="3840" y="0" width="2208" height="1208" extended-state="0" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
       <window_info id="Capture Tool" order="1" />
-      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.20511627" />
+      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.20530726" />
       <window_info id="Structure" order="3" side_tool="true" />
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info id="Build Variants" order="5" side_tool="true" />
@@ -156,9 +157,9 @@
       <window_info anchor="bottom" id="Logcat" order="0" weight="0.32961932" />
       <window_info anchor="bottom" id="TODO" order="1" />
       <window_info anchor="bottom" id="Terminal" order="2" />
-      <window_info anchor="bottom" id="Event Log" order="3" sideWeight="0.5004651" side_tool="true" visible="true" weight="0.26369545" />
+      <window_info anchor="bottom" id="Event Log" order="3" sideWeight="0.5004656" side_tool="true" visible="true" weight="0.2639405" />
       <window_info anchor="bottom" id="Version Control" order="4" />
-      <window_info anchor="bottom" id="Build" order="5" sideWeight="0.49953488" visible="true" weight="0.26369545" />
+      <window_info active="true" anchor="bottom" id="Build" order="5" sideWeight="0.49953446" visible="true" weight="0.2639405" />
       <window_info anchor="bottom" id="Android Profiler" order="6" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="7" />
       <window_info anchor="bottom" id="Debug" order="8" />

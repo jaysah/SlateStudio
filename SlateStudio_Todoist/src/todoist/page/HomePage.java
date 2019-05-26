@@ -10,25 +10,27 @@ import io.appium.java_client.pagefactory.AndroidFindBy;
 
 public class HomePage{
 	
-	public HomePage(AndroidDriver<AndroidElement> driver)
+	AndroidDriver<AndroidElement> driver;
+	
+	public HomePage(AndroidDriver<AndroidElement> _driver)
 	{		
-		PageFactory.initElements(driver, this);
+		this.driver = _driver;
+		PageFactory.initElements(this.driver, this);
 	}
 		
-	@CacheLookup
-	@AndroidFindBy(id="")
+	@AndroidFindBy(id="com.todoist:id/btn_google")
 	private MobileElement btnContinueWithGoogle;
 	
-	@CacheLookup
-	@AndroidFindBy(id="com.todoist:id/btn_google")
-	private MobileElement btnContinueWithFacebook;
-	
-	@CacheLookup
 	@AndroidFindBy(id="com.todoist:id/btn_facebook")
-	private MobileElement txtPassword;
-	
-	@CacheLookup
+	private MobileElement btnContinueWithFacebook;
+		
 	@AndroidFindBy(id="com.todoist:id/btn_welcome_continue_with_email")
 	private MobileElement btnContinueWithEmail;
-		
+
+	public LoginPage ClickBtnContinueWithEmail() throws InterruptedException
+	{
+		btnContinueWithEmail.click();
+		Thread.sleep(5000);
+		return new LoginPage(this.driver);		
+	}	
 }

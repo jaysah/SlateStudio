@@ -7,6 +7,8 @@ import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.remote.MobileCapabilityType;
+import todoist.page.HomePage;
+import todoist.page.LoginPage;
 
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -18,6 +20,8 @@ import static org.junit.Assert.*;
 public class CheckProject_Exists {
 
 	public AndroidDriver<AndroidElement> driver;
+	HomePage home;
+	LoginPage login;
 	
 	 @Before
 	  public void setUp() throws MalformedURLException, InterruptedException {
@@ -31,30 +35,25 @@ public class CheckProject_Exists {
 	    desiredCapabilities.setCapability("noReset", true);	   
 	    
 		
-			URL remoteUrl = new URL("http://localhost:4723/wd/hub");
-			    driver = new AndroidDriver<AndroidElement>(remoteUrl, desiredCapabilities);
-			    Thread.sleep(5000);
+		URL remoteUrl = new URL("http://localhost:4723/wd/hub");
+		driver = new AndroidDriver<AndroidElement>(remoteUrl, desiredCapabilities);		
 	 }
 
 	  @Test
-	  public void test() {
-		
-		  assertNotNull(driver.getContext());
-		  MobileElement el1 = (MobileElement) driver.findElementById("com.todoist:id/btn_welcome_continue_with_email");
-		    el1.click();
-		    MobileElement el2 = (MobileElement) driver.findElementById("com.todoist:id/email_exists_input");
-		    el2.sendKeys("info.jsframes@gmail.com");
-		    MobileElement el3 = (MobileElement) driver.findElementById("com.todoist:id/btn_continue_with_email");
-		    el3.click();
-		    MobileElement el4 = (MobileElement) driver.findElementById("com.todoist:id/log_in_password");
-		    el4.sendKeys("bed542air626");
-		    MobileElement el5 = (MobileElement) driver.findElementById("com.todoist:id/btn_log_in");
-		    el5.click();
-		
+	  public void testCase() throws InterruptedException {
+		Thread.sleep(5000);
+		  //Goto home page and click Continue With Email Button
+		  home = new HomePage(driver);
+		  login = home.ClickBtnContinueWithEmail();
+		  		 
+		  login.txtUserId.setValue("info.jsframes@gmail.com");		 
+		  login.btnContinueWithEmail.click();
+		  driver.wait(5000);
+		  login.txtPassword.setValue("Login@gmail~1");
 	  }
 
 	  @After
 	  public void tearDown() {
-	   // driver.quit();
+	   driver.quit();
 	  }
 }
