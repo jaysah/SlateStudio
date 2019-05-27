@@ -54,5 +54,7 @@ public class CheckProjectExists {
 		Pages.LeftPanel leftpanel = new Pages.LeftPanel(driver);
 		leftpanel.Launch();
 		leftpanel.ClickPanelItem(PanelOptions.Projects);
+		
+		//Get ProjectList and assert
 	}
 }

@@ -14,25 +14,25 @@ public class LeftPanel {
 	AppiumDriver<WebElement> driver;
 	TouchAction<?> action;
 	
-	@FindBy(name="Inbox") WebElement
+	@FindBy(linkText="Inbox") WebElement
 	PanelItem_Inbox;
 	
-	@FindBy(name="Today") WebElement
+	@FindBy(linkText="Today") WebElement
 	PanelItem_Today;
 	
-	@FindBy(name="Next 7 Days") WebElement
+	@FindBy(linkText="Next 7 Days") WebElement
 	PanelItem_Next_7_Days;
 	
-	@FindBy(name="Projects") WebElement
+	@FindBy(linkText="Projects") WebElement
 	PanelItem_Projects;
 	
-	@FindBy(name="Labels") WebElement
+	@FindBy(linkText="Labels") WebElement
 	PanelItem_Labels;
 	
-	@FindBy(name="Filters") WebElement
+	@FindBy(linkText="Filters") WebElement
 	PanelItem_Filters;
 	
-	@FindBy(name="Settings") WebElement
+	@FindBy(linkText="Settings") WebElement
 	PanelItem_Settings;
 	
 	public LeftPanel(AppiumDriver<WebElement> driver)
