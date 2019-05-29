@@ -23,7 +23,7 @@ public class LeftPanel {
 	@FindBy(linkText="Next 7 Days") WebElement
 	PanelItem_Next_7_Days;
 	
-	@FindBy(linkText="Projects") WebElement
+	@FindBy(xpath="//*[@id=\"screenshotContainer\"]/div/div/div/div/div/div[23]") WebElement
 	PanelItem_Projects;
 	
 	@FindBy(linkText="Labels") WebElement

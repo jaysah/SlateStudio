@@ -55,6 +55,6 @@ public class CheckProjectExists {
 		leftpanel.Launch();
 		leftpanel.ClickPanelItem(PanelOptions.Projects);
 		
-		//Get ProjectList and assert
+		leftpanel.ClickPanelItem(PanelOptions.Projects);
 	}
 }

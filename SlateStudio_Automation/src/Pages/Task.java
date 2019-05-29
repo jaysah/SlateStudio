@@ -15,7 +15,17 @@ public class Task {
 		PageFactory.initElements(driver, this);
 	}
 	
-	@FindBy(id="com.todoist:id/email_exists_input")
-	WebElement txtUserId;
+	@FindBy(id="com.todoist:id/fab")
+	WebElement AddTask;
+	
+	@FindBy(className="com.todoist:id/fab")
+	WebElement FabButton;
+		
+	
+	public void ClickAddNewTask()
+	{
+		AddTask.click();
+	}
+		
 
 }
